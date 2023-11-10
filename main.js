@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("alert(\"hi\")\n\n\n//# sourceURL=webpack://odin-profile-page/./src/index.js?");
+eval("\n\n//# sourceURL=webpack://odin-profile-page/./src/index.js?");
 
 /***/ })
 
