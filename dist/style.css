@@ -1,0 +1,9 @@
+* {
+  color: bisque;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: rgb(44, 44, 44);
+}
