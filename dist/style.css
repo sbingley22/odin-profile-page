@@ -6,4 +6,93 @@
 html,
 body {
   background-color: rgb(44, 44, 44);
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 80px;
+}
+
+.profile-pic-container {
+  display: block;
+  position: relative;
+  box-shadow: 0 0 5px rgba(222, 222, 222, 0.5);
+}
+
+.profile-pic-container img {
+  max-width: 400px;
+}
+
+.profile-pic-container h1 {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  font-size: 3rem;
+  margin: 10px;
+}
+
+.about-me-container {
+  padding: 20px;
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0 0 5px rgba(222, 222, 222, 0.5);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.about-me-container p {
+  justify-self: center;
+  align-self: center;
+}
+
+.icons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  justify-self: end;
+  justify-items: end;
+  align-items: end;
+}
+
+.icon-svg {
+  display: inline;
+  width: 32px;
+  filter: invert(1);
+}
+.icon-svg.no-invert {
+  filter: invert(0);
+}
+
+.projects-container {
+  margin: 20px;
+}
+
+.project-card {
+  width: 300px;
+}
+
+.img-container {
+  width: 300px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 200px;
+  background-color: red;
+}
+
+.contacts-container {
+  margin: 20px;
+  margin-top: 80px;
 }
