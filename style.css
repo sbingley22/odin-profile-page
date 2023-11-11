@@ -6,8 +6,9 @@
 html,
 body {
   background-color: rgb(44, 44, 44);
+  background: linear-gradient(160deg, rgb(99, 99, 99) 24%, rgb(44, 44, 44) 25%);
   font-family: "Roboto", sans-serif;
-  padding: 20px;
+  padding: 0px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -16,6 +17,11 @@ h1,
 h2,
 h3 {
   font-family: "Playfair Display", serif;
+}
+
+#content {
+  padding: 0;
+  margin: 0;
 }
 
 .about-container {
@@ -69,7 +75,7 @@ h3 {
 
 .icon-svg {
   display: inline;
-  width: 32px;
+  width: 24px;
   filter: invert(1);
 }
 .icon-svg.no-invert {
@@ -80,10 +86,17 @@ h3 {
   margin: 20px;
 }
 
+.project-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
 .project-card {
   width: 300px;
   background-color: rgb(22, 22, 22);
-  padding: 10px
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(222, 222, 222, 0.5);
 }
 
 .img-container {
@@ -103,11 +116,13 @@ h3 {
 }
 
 .project-details .icons {
-  width: 32px;
+  width: 24px;
   filter: invert(1);
 }
 
 .contacts-container {
-  margin: 20px;
+  margin: 0;
   margin-top: 80px;
+  padding: 20px;
+  background-color: rgb(99, 99, 99);
 }
