@@ -6,7 +6,7 @@
 html,
 body {
   background-color: rgb(44, 44, 44);
-  background: linear-gradient(160deg, rgb(99, 99, 99) 24%, rgb(44, 44, 44) 25%);
+  background: linear-gradient(170deg, rgb(99, 99, 99) 22%, rgb(44, 44, 44) 25%);
   font-family: "Roboto", sans-serif;
   padding: 0px;
   max-width: 1400px;
@@ -67,7 +67,7 @@ h3 {
 
 .icons-container {
   display: grid;
-  grid-template-columns: repeat(3, 50px);
+  grid-template-columns: repeat(3, 35px);
   justify-self: end;
   justify-items: end;
   align-items: end;
@@ -90,6 +90,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  justify-items: center;
 }
 
 .project-card {
@@ -125,4 +126,79 @@ h3 {
   margin-top: 80px;
   padding: 20px;
   background-color: rgb(99, 99, 99);
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.contacts-details {
+  display: block;
+  margin: 20px;
+}
+
+main h2 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.contacts-details div {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+}
+
+.contacts-details .icon-container {
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  justify-content: end;
+  align-items: end;
+  margin-top: 20px;
+}
+
+.icon {
+  display: inline;
+  width: 24px;
+  filter: invert(1);
+}
+.icon.no-invert {
+  filter: invert(0);
+}
+
+.contacts-image img {
+  max-width: 500px;
+}
+
+/* Phone */
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-pic-container img {
+    max-width: 340px;
+  }
+
+  .contacts-container {
+    grid-template-columns: 1fr;
+  }
+
+  main h2 {
+    text-align: center;
+  }
+
+  .contacts-image img {
+    max-width: 300px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  main h2 {
+    text-align: center !important;
+  }
+
+  .contacts-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
